@@ -1,0 +1,133 @@
+{
+    "contact": [
+      {
+        "name": "Jonas Fährmann",
+        "location": "Münster, NRW, Germany",
+        "mail": "jonasfaehrmann@me.com",
+        "web": [
+          {
+            "name": "https://www.jonasfaehrmann.com",
+            "uri": "https://www.jonasfaehrmann.com",
+            "alt": "Website of Jonas Fährmann"
+          }
+        ],
+        "items": [
+          {
+            "isExternalLink": true,
+            "active": true,
+            "id": "git",
+            "name": "Git",
+            "uri": "https://gitlab.com/jfaehrmann"
+          },
+          {
+            "isExternalLink": true,
+            "active": true,
+            "id": "twitter",
+            "name": "Twitter",
+            "uri": "https://twitter.com/jfaehrmannde"
+          },
+          {
+            "isExternalLink": true,
+            "active": true,
+            "id": "instagram",
+            "name": "Instagram",
+            "uri": "https://www.instagram.com/jfaehrmann/"
+          }
+        ]
+      }
+    ],
+    "skills": {
+      "jobRelated": [
+        {
+          "name": "Communicative and team-oriented person"
+        },
+        {
+          "name": "Agile software development"
+        },
+        {
+          "name": "User-centered and team-spanning Frontend Design/Development"
+        },
+        {
+          "name": "Frontend ecosystem: npm, postCSS, webpack, babel, eslint and more"
+        },
+        {
+          "name": "Version control/management with git"
+        },
+        {
+          "name": "Basic CI/CD with Gitlab and/or Gerrit and Jenkins"
+        },
+        {
+          "name": "Semantics, a11y and frontend-performance in mind"
+        },
+        {
+          "name": "Frontend architecture (Micro-Frontends with Web Components)"
+        }
+      ],
+      "programming": [
+        {
+          "name": "HTML"
+        },
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "JavaScript"
+        },
+        {
+          "name": "node.js"
+        }
+      ]
+    },
+    "education": [
+      {
+        "title": "M.Sc Business Informations",
+        "institution": "FH Dortmund",
+        "uri": "https://www.fh-dortmund.de",
+        "start": "2016",
+        "end": "2019"
+      },
+      {
+        "title": "B.Sc Business Informations",
+        "institution": "HS Osnabrück - Campus Lingen",
+        "uri": "https://www.hs-osnabrueck.de/de/studium/studentenleben/campus/campus-lingen/",
+        "start": "2011",
+        "end": "2014"
+      }
+    ],
+    "interests": "I'm a family person, i like to meet friends and i'm interested in all kind of sports, especially watersports, such as surfing, wind-surfing and wakeboard. I'm also interested in photo- and videography and i like to travel the world and see as many places as possible. I love to try new technologies and transform them on real world projects.",
+    "experience": [
+      {
+        "title": "Frontend Designer/Developer (IT-Analyst)",
+        "company": "Thalia Bücher GmbH",
+        "uri": "https://www.thalia.de",
+        "start": "06/2019",
+        "end": "today"
+      },
+      {
+        "title": "Working Student IT Shop Development",
+        "company": "Thalia Bücher GmbH",
+        "uri": "https://www.thalia.de",
+        "start": "01/2018",
+        "end": "05/2019"
+      },
+      {
+        "title": "Working Student Online Marketing",
+        "company": "Sport Wiegmann GmbH",
+        "uri": "https://www.cawila.de",
+        "start": "09/2016",
+        "end": "12/2017"
+      },
+      {
+        "title": "Junior Manager Online Marketing",
+        "company": "Sport Wiegmann GmbH",
+        "uri": "https://www.cawila.de",
+        "start": "09/2014",
+        "end": "08/2016"
+      }
+    ],
+    "name": "Jonas Fährmann",
+    "text": "After my bachelor degree in 2014 i started working at Sport Wiegmann GmbH and was responsible for the new created webshop. Besides the communication with advertising and web agencies i led the online marketing activities and was responsible for content and newsletter marketing. Furthermore i made my first deeper experiences with Frontend-Design, Frontend-Development and User Experience. In 2016 i decided to start my master degree and still worked as a working student for Sport Wiegmann until 12/2017. From 2018 until 05/2019 i've worked for Thalia Bücher GmbH as a working student in the field of IT Shop Development. From 06/2019 up to now i am fulltime IT-Analyst/Frontend-Designer/Developer at Thalia Bücher GmbH.",
+    "location": "Münster, NRW, Germany",
+    "mail": "jonasfaehrmann@me.com",
+    "profession": "Frontend Designer/Developer"
+  }

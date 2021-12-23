@@ -1,35 +1,32 @@
 <post-list>
     <style>{{ '_includes/components/post-list/style.css' | postcss('inline') | safe }}</style>
-    <header>
+    <div>
         {% if tagpage %}
             <h1>Fancy stuff for: "{{ tag }}"</h1>
-        {% elseif homepage %}
-            <h2>Latest Posts</h2>
         {% else %}
             <h1>Notes & Posts</h1>
         {% endif %}
-    </header>
+    </div>
     {% for post in postslist | reverse %}
-        <article class="article">
-            <h2>
-                <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-            </h2>
+        <article class="post">
+            <header class="post-header">
+                <h2>
+                    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+                </h2>
+            </header>
             <p>{{ post.date | readableDate }}</p>
             {% if post.data.summary %}
                 <p>{{ post.data.summary }}</p>
             {% endif %}
             {% if post.data.tags %}
-                <div class="tags-container">
-                    <p>Tags:</p>
-                    <ul class="tags-list">
-                        {% for tag in post.data.tags %}
-                            {%- if tag != "post" -%}
-                                {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-                                <li><a href="{{ tagUrl | url }}">{{ tag }}</a></li>
-                            {%- endif -%}
-                        {% endfor %}
-                    </ul>
-                </div>
+                <ul class="tags-list">
+                    {% for tag in post.data.tags %}
+                        {%- if tag != "post" -%}
+                            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                            <li><a href="{{ tagUrl | url }}">{{ tag }}</a></li>
+                        {%- endif -%}
+                    {% endfor %}
+                </ul>
             {% endif %}
         </article>
     {% endfor %}

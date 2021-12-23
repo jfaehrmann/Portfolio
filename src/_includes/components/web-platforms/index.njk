@@ -1,0 +1,12 @@
+<web-platforms>
+    <style>{{ '_includes/components/web-platforms/style.css' | postcss('inline') | safe }}</style>
+    <ul class="platforms-list">
+        {% for el in web.platforms %}
+            {% if el.active %}
+                <li>
+                    <a href="{{ el.uri }}">{{ el.name }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</web-platforms>

@@ -3,4 +3,7 @@ layout: page.njk
 pageName: home
 speedlifyHash: 8de79239
 ---
-<h1>Herzlich Willkommen</h1>
+{% include 'components/home-welcome/index.njk' %}
+
+{% set latestposts = collections.posts %}
+{% include 'components/latest-posts/index.njk' %}

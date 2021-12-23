@@ -1,0 +1,30 @@
+.latest-post-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.latest-post-headline {
+    margin: 0;
+    margin-inline-end: 40px;
+}
+
+.latest-post:not(:last-of-type) {
+    margin-block-end: 40px;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.tags-list > *:not(:last-child) {
+    margin-inline-end: 10px;
+}
+
+.latest-posts-footer {
+    margin-block-start: 40px;
+}

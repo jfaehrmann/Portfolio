@@ -1,0 +1,55 @@
+<curriculum-vitae>
+    <h1>{{ resume.name }}</h1>
+    <strong>{{ resume.profession }}</strong>
+    <p>{{ resume.text }}</p>
+    <hr>
+
+    <h2>Experience</h2>
+    <ul class="no-bullets">
+    {% for el in resume.experience %}
+        <li>
+            <p>{{ el.start }} - {{ el.end }}</p>
+            <a href="{{ el.uri }}">{{ el.company }}</a>
+            <strong>{{ el.title }}</strong>
+        </li>
+    {% endfor %}
+    </ul>
+    <hr>
+    
+    <h2>Education</h2>
+    <ul class="no-bullets">
+    {% for el in resume.education %}
+        <li>
+            <p>{{ el.start }} - {{ el.end }}</p>
+            <a href="{{ el.uri }}">{{ el.institution }}</a>
+            <strong>{{ el.title }}</strong>
+        </li>
+    {% endfor %}
+    </ul>
+    <hr>
+    
+    <h2>Skills</h2>
+    <i>Job related</i>
+    <ul>
+    {% for el in resume.skills.jobRelated %}
+        <li>{{ el.name }}</li>
+    {% endfor %}
+    </ul>
+    <i>(Programming) Languages</i>
+    <ul>
+    {% for el in resume.skills.programming %}
+        <li>{{ el.name }}</li>
+    {% endfor %}
+    </ul>
+    <hr>
+    
+    <h2>Hobbies & Interests</h2>
+    <p>{{ resume.interests }}</p>
+    <hr>
+    
+    <h2>Contact</h2>
+    <p><strong>location: </strong>{{ resume.location }}</p>
+    <p><strong>mail: </strong><a href="mailto:{{ resume.mail }}">{{ resume.mail }}</a></p>
+    <p><strong>web: </strong><a href="{{ web.uri }}" alt="{{ web.alt }}">{{ web.name }}</a></p>
+    {% include 'components/web-platforms/index.njk' %}
+</curriculum-vitae>
