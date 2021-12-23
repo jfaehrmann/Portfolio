@@ -1,0 +1,43 @@
+{
+    "name": "https://jonasfaehrmann.com",
+    "uri": "https://jonasfaehrmann.com",
+    "alt": "Personal website of Jonas Fährmann",
+    "platforms": [
+        {
+            "active": true,
+            "id": "twitter",
+            "name": "Twitter",
+            "uri": "https://twitter.com/jfaehrmannde"
+        },
+        {
+            "active": true,
+            "id": "xing",
+            "name": "Xing",
+            "uri": "https://www.xing.com/profile/Jonas_Faehrmann5/"
+        },
+        {
+            "active": true,
+            "id": "linkedin",
+            "name": "LinkedIn",
+            "uri": "https://www.linkedin.com/in/jonas-f%C3%A4hrmann-29bb8394/"
+        },
+        {
+            "active": true,
+            "id": "codepen",
+            "name": "Codepen",
+            "uri": "https://codepen.io/jfaehrmann"
+        },
+        {
+            "active": true,
+            "id": "git",
+            "name": "Github",
+            "uri": "https://github.com/jfaehrmann"
+        },
+        {
+            "active": true,
+            "id": "instagram",
+            "name": "Instagram",
+            "uri": "https://www.instagram.com/jfaehrmann/"
+        }
+    ]
+}

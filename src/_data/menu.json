@@ -1,12 +1,16 @@
 {
     "items": [
         {
+            "name": "resume",
+            "url": "/resume"
+        },
+        {
             "name": "writing",
             "url": "/writing"
         },
         {
-            "name": "contact",
-            "url": "/contact"
+            "name": "blogroll",
+            "url": "/blogroll"
         }
     ]
 }

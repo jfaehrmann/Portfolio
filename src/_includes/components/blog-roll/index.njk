@@ -1,0 +1,11 @@
+<blog-roll>
+    <h1>{{ blogroll.title }}</h1>
+    <strong>{{ blogroll.subtitle }}</strong>
+    <ul>
+        {% for el in blogroll.websites %}
+            <li>
+                <a href="{{ el.uri }}" alt="{{ el.alt }}" target="_blank" rel="noopener">{{ el.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</blog-roll>

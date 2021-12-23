@@ -6,6 +6,11 @@
     width: 100%;
     max-width: var(--content-width);
     margin: 0 auto;
-    height: 50px;
+    height: auto;
+    min-height: 50px;
     padding-inline: var(--layout-spacing);
+}
+
+.skip-to-content {
+    width: 100%;
 }

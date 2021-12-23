@@ -1,0 +1,10 @@
+under-construction {
+    display: block;
+    background-color: #bfbfbf;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    border-radius: 4px;
+    color: var(--color-text);
+}

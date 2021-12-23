@@ -9,7 +9,8 @@
     </head>
     <body>
         {% include "partials/header.njk" %}
-        <main class="page-main{% if templateClass %} {{ templateClass }}{% endif %}">
+        {% include "components/under-construction/index.njk" %}
+        <main id="content" class="page-main{% if templateClass %} {{ templateClass }}{% endif %}">
             {{ content | safe }}
         </main>
         {% include "partials/footer.njk" %}

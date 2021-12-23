@@ -1,0 +1,111 @@
+{
+    "title": "Blogroll",
+    "subtitle": "Amazing people, websites, magazines and more",
+    "websites": [
+        {
+            "name": "CSS-Tricks",
+            "uri": "https://css-tricks.com/",
+            "alt": "Website of CSS-Tricks from Chris Coyier"
+        },
+        {
+            "uri": "https://web.dev/",
+            "alt": "A platform where you can learn and measure",
+            "name": "web.dev"
+        },
+        {
+            "name": "dev.to",
+            "uri": "https://dev.to/",
+            "alt": "dev.to website"
+        },
+        {
+            "name": "allthetags.com",
+            "uri": "https://allthetags.com/",
+            "alt": "A list of all HTML-Tags"
+        },
+        {
+            "uri": "https://moderncss.dev/",
+            "name": "moderncss",
+            "alt": "Modern CSS Solutions for Old CSS Problems"
+        },
+        {
+            "name": "HTMLHell",
+            "uri": "https://www.htmhell.dev/",
+            "alt": "A collection of bad practices in HTML, copied from real websites."
+        },
+        {
+            "uri": "https://htmldom.dev/",
+            "name": "HTMLDOM",
+            "alt": "how to manage HTML DOM with vanilla JavaScript only? for modern browsers and IE 11+"
+        },
+        {
+            "name": "Web Perf Checklist",
+            "uri": "https://www.notion.so/Web-performance-checklist-02fbc975d9bd432993bdadce73de1b17",
+            "alt": "A web performance Checklist for frontend-performance by Robin Rendle"
+        },
+        {
+            "uri": "https://frontendchecklist.io/",
+            "name": "frontendchecklist.io",
+            "alt": " The Front-End Checklist Application is perfect for modern websites and meticulous developers!"
+        },
+        {
+            "uri": "https://variablefonts.io/",
+            "name": "variablefonts.io",
+            "alt": "A Variable Fonts Primer"
+        },
+        {
+            "uri": "https://bundlephobia.com/",
+            "name": "bundle phobia",
+            "alt": "Website where you can find the cost of adding a npm package to your bundle"
+        },
+        {
+            "name": "t3n (german)",
+            "uri": "https://t3n.de/",
+            "alt": "t3n  – digital pioneers | Das Magazin für digitales Business"
+        },
+        {
+            "name": "JavaScript.info",
+            "uri": "https://javascript.info/",
+            "alt": "The Modern JavaScript Tutorial"
+        },
+        {
+            "name": "You might not need jQuery",
+            "uri": "http://youmightnotneedjquery.com/",
+            "alt": "Website that shows vanilla JavaScript solutions for common jQuery functions"
+        },
+        {
+            "uri": "https://mxb.dev/",
+            "alt": "Website of Max Boeck - a frontend developer from vienna",
+            "name": "mxb.dev"
+        },
+        {
+            "alt": "Website of Manuel Matuzović - a frontend developer from Vienna",
+            "uri": "https://www.matuzo.at/",
+            "name": "matuzo.at"
+        },
+        {
+            "uri": "https://flaviocopes.com/",
+            "name": "Flavio Copes",
+            "alt": "Website and Blog of Flavio Copes"
+        },
+        {
+            "uri": "https://gomakethings.com/",
+            "name": "Go Make Things",
+            "alt": "Website of Chris Ferdinandi with Daily JavaScript Tips"
+        },
+        {
+            "name": "jakearchibald.com",
+            "uri": "https://jakearchibald.com/",
+            "alt": "Blog of Jake Archibald - a developer advocate for Google Chrome"
+        },
+        {
+            "uri": "https://lea.verou.me/",
+            "alt": "Website of Lea Verou - HCI researcher, author and speaker",
+            "name": "lea.verou.me"
+        },
+        {
+            "uri": "https://www.learnwithjason.dev/blog",
+            "name": "learnwithjason.dev",
+            "alt": "Tutorials, quick tips, and other helpful resources for learning more about code!"
+        }
+    ]
+}

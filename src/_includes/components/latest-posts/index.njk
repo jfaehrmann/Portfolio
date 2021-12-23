@@ -1,0 +1,39 @@
+<latest-posts>
+    <style>{{ '_includes/components/latest-posts/style.css' | postcss('inline') | safe }}</style>
+    <div class="latest-post-header">
+        <h2 class="latest-post-headline">Latest Posts</h2>
+        {% if (latestposts.length > 4) %}
+            <a href="/writing">all posts ></a>
+        {% endif %}
+    </div>
+    {% for post in latestposts | reverse %}
+        {% if loop.index0 < 4 %}    
+            <article class="post">
+                <header class="post-header">
+                    <h2>
+                        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+                    </h2>
+                </header>
+                <p>{{ post.date | readableDate }}</p>
+                {% if post.data.summary %}
+                    <p>{{ post.data.summary }}</p>
+                {% endif %}
+                {% if post.data.tags %}
+                    <ul class="tags-list">
+                        {% for tag in post.data.tags %}
+                            {%- if tag != "post" -%}
+                                {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                                <li><a href="{{ tagUrl | url }}">{{ tag }}</a></li>
+                            {%- endif -%}
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </article>
+        {% endif %}
+    {% endfor %}
+    {% if (latestposts.length > 4) %}
+        <div class="latest-posts-footer">
+            <a href="/writing">all posts ></a>
+        </div>
+    {% endif %}
+</latest-posts>
