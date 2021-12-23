@@ -1,0 +1,6 @@
+{
+    "layout": "post.njk",
+    "permalink": "writing/post/{{ date | postDate | slug }}-{{ title | slug }}/index.html",
+    "tags": "post",
+    "speedlifyHash": "8de79239"
+}

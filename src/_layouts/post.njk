@@ -1,0 +1,10 @@
+---
+layout: base
+templateClass: layout-post
+---
+{% include 'components/single-post/index.njk' %}
+
+{% set allposts = collections.posts %}
+{% include 'components/other-writings/index.njk' %}
+
+<script defer src="https://static.codepen.io/assets/embed/ei.js"></script>

@@ -1,0 +1,15 @@
+<other-writings>
+    <h2>More articles and notes</h2>
+    <ul>
+    {% for post in allposts | reverse %}
+        {% if loop.index0 < 8 %}    
+        <li >
+            <a href="{{ post.url | url }}">
+                <time datetime="{{ post.date | readableDate }}" aria-label="written on {{ post.date | readableDate }}">{{ post.date | readableDate }}</time>
+                <span>{{ post.data.title }}</span>
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</other-writings>

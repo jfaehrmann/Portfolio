@@ -1,0 +1,16 @@
+@import "speedlify-score/speedlify-score.css";
+
+speedlify-results {
+    display: block;
+    position: relative;
+}
+
+.speedlify-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    color: transparent;
+}

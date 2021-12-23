@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: page.njk
+renderData:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag }}/
+canonicalLink: tags/{{ tag }}
+speedlifyHash: 8de79239
+---
+{% set postslist = collections[ tag ] %}
+{% set tagpage = true %}
+{% include 'components/post-list/index.njk' %}

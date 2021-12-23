@@ -1,0 +1,10 @@
+<main-menu>
+    <style>{{ '_includes/components/main-menu/style.css' | postcss('inline') | safe }}</style>
+    <ul class="menu"> 
+        {% for item in menu.items %}
+            <li>
+                <a href="{{item.url | safe}}">{{ item.name | safe }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</main-menu>

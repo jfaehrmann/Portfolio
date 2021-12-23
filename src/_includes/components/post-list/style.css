@@ -1,0 +1,14 @@
+.tags-container {
+    display: flex;
+    align-items: center;
+}
+
+.tags-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.tags-list > *:not(:last-child) {
+    margin-inline-end: 10px;
+}

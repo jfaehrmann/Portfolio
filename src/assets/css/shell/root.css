@@ -1,0 +1,17 @@
+:root {
+    --content-width: 1000px;
+    --color-text: #101010;
+    --layout-spacing: 15px;
+}
+
+* {
+    color: var(--color-text);
+}
+
+*:not(code) {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+    font-size: inherit;
+}

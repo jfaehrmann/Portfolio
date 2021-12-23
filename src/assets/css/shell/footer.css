@@ -1,0 +1,12 @@
+.page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    height: auto;
+    min-height: 100px;
+    padding-inline: var(--layout-spacing);
+}
