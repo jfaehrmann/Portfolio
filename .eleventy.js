@@ -1,8 +1,10 @@
 const { join } = require("path");
 const { DateTime } = require("luxon");
-const buildCSS = require("./lib/build/css");
+const buildCSS = require("./lib/build/css/build");
 
 module.exports = (eleventyConfig) => {
+    eleventyConfig.addPassthroughCopy("src/assets/**/*.svg");
+    
     eleventyConfig.addCollection("posts", (collection) => {
         return collection.getFilteredByGlob("src/posts/*.md");
     });

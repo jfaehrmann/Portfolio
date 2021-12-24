@@ -15,10 +15,11 @@
     "scripts": {
         "start": "npm-run-all --parallel watch:*",
         "watch:eleventy": "eleventy --serve --watch",
-        "watch:js": "parcel watch src/assets/js/shell.js",
-        "build": "npm-run-all build:*",
+        "watch:js": "npm-run-all parcel:*",
+        "build": "npm-run-all build:eleventy parcel:build",
         "build:eleventy": "npx eleventy",
-        "build:js": "parcel build src/assets/js/shell.js"
+        "parcel:build": "parcel build src/assets/js/shell.js",
+        "parcel:watch": "parcel watch src/assets/js/shell.js"
     },
     "repository": {
         "type": "git",
