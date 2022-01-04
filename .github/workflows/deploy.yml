@@ -21,11 +21,14 @@ jobs:
           npm ci
           npm run build
       
+      - name: Install lftp
+        run: |
+          apt-get update -qy
+          apt-get install -y lftp
+
       - name: Deploy static files
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: 'webseiten/portfolio/2022/'
+        run: |
+          lftp -e "set ssl:verify-certificate no; open ${{ secrets.FTP_HOST }}; user ${{ secrets.FTP_USERNAME }} ${{ secrets.FTP_PASSWORD }}; mirror --reverse --verbose --delete $LOCAL_DIR $SERVER_DIR; bye"
+        env:
+          LOCAL_DIR: dist/
+          SERVER_DIR: /webseiten/portfolio/2022/
