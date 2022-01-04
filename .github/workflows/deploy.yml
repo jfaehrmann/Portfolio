@@ -23,8 +23,8 @@ jobs:
       
       - name: Install lftp
         run: |
-          apt-get update -qy
-          apt-get install -y lftp
+          sudo apt-get update -qy
+          sudo apt-get install -y lftp
 
       - name: Deploy static files
         run: |
